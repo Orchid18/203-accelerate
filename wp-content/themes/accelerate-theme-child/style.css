@@ -64,12 +64,15 @@ aside.case-study-sidebar{
 }
 
 aside.case-study-sidebar h4{
-  color:#ccc;
-  font-weight: 600;
+  color:#bbb;
+  margin-top: 1em;
+  font-weight: normal;
+  font-size: .85em;
 }
 
 aside.case-study-sidebar h4 span{
   color:black;
+  font-weight: bolder;
 }
 
 div.case-study-images{
