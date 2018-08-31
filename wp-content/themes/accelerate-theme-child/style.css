@@ -50,3 +50,34 @@ Text Domain:  accelerate-theme-child
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+/*case study page styles*/
+
+article.case-study{
+  margin:40px 0 0;
+}
+
+aside.case-study-sidebar{
+  float:left;
+  width:314px;
+  margin:0 40px 0 0;
+}
+
+aside.case-study-sidebar h4{
+  color:#ccc;
+  font-weight: 600;
+}
+
+aside.case-study-sidebar h4 span{
+  color:black;
+}
+
+div.case-study-images{
+  float:left;
+  width:606px;
+}
+
+div.case-study-images img{
+  margin-bottom:50px;
+  border:1px solid #dddddd;
+}
