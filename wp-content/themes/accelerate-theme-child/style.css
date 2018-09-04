@@ -133,3 +133,20 @@ div.case-study-images img {
 	width: 100%;
 	height: auto;
 }
+
+/*customize social media icons*/
+
+.screen-reader-text {
+    position: absolute !important;
+    left: -999em;
+}
+
+.fa-lg{
+  height:1.5em;
+  width:1.5em;
+  margin-left: .25em;
+  padding:.2em .35em;
+  color:white;
+  background:#3b3b3b;
+  border-radius: 50%;
+}
