@@ -17,6 +17,13 @@ function accelerate_child_scripts(){
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 
 
+function wmpudev_enqueue_icon_stylesheet() {
+	wp_register_style( 'fontawesome', 'http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'fontawesome');
+}
+add_action( 'wp_enqueue_scripts', 'wmpudev_enqueue_icon_stylesheet' );
+
+
 
 // Add new case study custom template
 
@@ -34,3 +41,10 @@ function create_custom_post_types() {
     );
 }
 add_action( 'init', 'create_custom_post_types' );
+
+//limits excerpt length
+
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
