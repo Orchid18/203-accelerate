@@ -44,14 +44,14 @@ Text Domain:  accelerate-theme-child
 }
 
 /*change appearance of "READ MORE" link*/
-.read-more-link {
+.read-more-link a{
   font-family: 'Montserrat';
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
 }
 
-/*case study page styles*/
+/*case study single page styles*/
 
 article.case-study{
   margin:40px 0 0;
@@ -75,6 +75,14 @@ aside.case-study-sidebar h4 span{
   font-weight: bolder;
 }
 
+aside.case-study-sidebar p span{
+  font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+
 div.case-study-images{
   float:left;
   width:606px;
@@ -83,4 +91,45 @@ div.case-study-images{
 div.case-study-images img{
   margin-bottom:50px;
   border:1px solid #dddddd;
+}
+
+/* Front page Case Study Links */
+
+section.featured-work{
+  text-align: center;
+  margin:0 auto;
+}
+
+section.featured-work h4{
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+ul.homepage-featured-work{
+  width: 100%;
+	float: left;
+}
+
+li.individual-featured-work{
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  padding-right: 1.9em;
+}
+
+li.individual-featured-work a{
+  font-weight: 600;
+  line-height: 2.5em;
+}
+
+/*Case Study Archives styles */
+
+article.case-study{
+  margin:0 auto;
+}
+
+div.case-study-images img {
+	width: 100%;
+	height: auto;
 }
