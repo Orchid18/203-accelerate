@@ -137,8 +137,13 @@ div.case-study-images img {
 /*customize social media icons*/
 
 .screen-reader-text {
-    position: absolute !important;
-    left: -999em;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow:hidden;
+  word-wrap:normal !important;
+  /*many screen reader and browser combinations announce broken words as they appear visually*/
 }
 
 .social-media-navigation ul li {
