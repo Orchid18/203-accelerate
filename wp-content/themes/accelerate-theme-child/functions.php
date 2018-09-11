@@ -17,7 +17,7 @@ function accelerate_child_scripts(){
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 
-// Add new case study custom template
+// Add new custom post types
 
 function create_custom_post_types() {
     register_post_type( 'case_studies',
@@ -31,7 +31,18 @@ function create_custom_post_types() {
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
+		register_post_type( 'our_services',
+        array(
+            'labels' => array(
+                'name' => __( 'Our Services' ),
+                'singular_name' => __( 'Service' )
+            ),
+            'public' => true,
+        )
+    );
+
 }
+
 add_action( 'init', 'create_custom_post_types' );
 
 //limits excerpt length
