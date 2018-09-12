@@ -38,6 +38,8 @@ function create_custom_post_types() {
                 'singular_name' => __( 'Service' )
             ),
             'public' => true,
+						'has_archive' => true,
+						'rewrite' => array( 'slug' => 'our-services' ),
         )
     );
 

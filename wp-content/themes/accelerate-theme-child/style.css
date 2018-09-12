@@ -247,3 +247,29 @@ div.our-services-image img{
   margin:0 auto;
   padding-top: 40px;
 }
+
+
+
+
+
+
+
+
+/*Our Services archive page************************************/
+
+.our-services {
+    background: url("img/taxi-photo-short.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    height: auto;
+    margin: 0 0 5em;
+    padding: 3em 0 5em 0;
+	  text-align: center;
+}
+
+.hero-content h2 {
+	color: #fff;
+	font-size: 1.8em;
+  font-weight: lighter;
+  line-height: 1.5;
+	margin: 0 auto;
+  max-width: 50%;
+}
