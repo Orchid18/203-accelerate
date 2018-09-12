@@ -43,14 +43,15 @@ get_header(); ?>
         </div>
 				<?php the_content(); ?>
 			<?php endwhile; // end of the loop. ?>
-			<section class="services-contact">
-				<div>
-					<h2>Interested in working with us?</h2>
-				</div>
-				<div>
-					<a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a>
-				</div>
-			</section>
+
+			<div class= "about-contact clearfix">
+				<ul class="about-contact-blurb">
+					<li><h2>Interested in working with us?</h2></li>
+					<li><a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a></li>
+				</ul>
+			</div>
+
+
 		</div><!-- .main-content -->
 
 
