@@ -17,7 +17,10 @@ get_header(); ?>
 
 <div id="primary" class="our-services hero-content">
 	<div class="main-content" role="main">
-		<h2>Accelerate is a marketing and strategy agency located in the heart of NYC.  Our goal is to build businesses by making our clients visible and making their customers smile.</h2>
+		<?php while ( have_posts() ) : the_post();
+			$hero_text = get_field("hero_text"); ?>
+			<h2><?php echo $hero_text; ?></h2>
+		<?php endwhile; // end of the loop. ?>
 	</div><!-- .main-content -->
 </div><!-- #primary -->
 

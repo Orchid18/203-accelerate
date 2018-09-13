@@ -314,4 +314,46 @@ div.our-services-image-r img{
   padding-right: 20px;
 }
 
-/*end of about page styles**************************/
+/*404 page styles**************************/
+
+.fouro-map,
+.fouro-text{
+  float:left;
+  height:auto;
+}
+
+.fouro-map{
+  display:flex;
+  width:33%;
+  padding-top: 80px;
+  height:auto;
+}
+
+.fouro-map img{
+  display:block;
+  margin:auto;
+}
+
+.fouro-text{
+  padding-left: 20px;
+  width:66%;
+}
+
+.fouro-text h1{
+  font: 900 1em/1.75 'Londrina Solid','Montserrat', 'Open Sans', Arial, sans-serif;
+  color:#45ac9d;
+  font-size:2.5em;
+  margin-top: 40px;
+}
+
+.fouro-text h3{
+  font: 300 1em/1.5 'Londrina Solid','Montserrat', 'Open Sans', Arial, sans-serif;
+  margin:auto 0;
+  font-size: 1.5em;
+  max-width: 90%;
+}
+
+.fouro-text a{
+  font-weight: bold;
+  color:#45ac9d;
+}

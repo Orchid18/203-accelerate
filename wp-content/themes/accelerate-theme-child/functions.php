@@ -14,6 +14,7 @@ function accelerate_child_scripts(){
 	wp_enqueue_style( 'accelerate-style', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'accelerate-style' ));
 	wp_enqueue_style( 'fontawesome', 'http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'accelerate-child-google-fonts','//fonts.googleapis.com/css?family=Londrina+Solid:300,900');
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 // Add new custom post types
@@ -29,18 +30,8 @@ function create_custom_post_types() {
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
-		register_post_type( 'our_services',
-        array(
-            'labels' => array(
-                'name' => __( 'Our Services' ),
-                'singular_name' => __( 'Service' )
-            ),
-            'public' => true,
-						'has_archive' => true,
-						'rewrite' => array( 'slug' => 'our-services' ),
-        )
-    );
 }
+
 add_action( 'init', 'create_custom_post_types' );
 //limits excerpt length
 function custom_excerpt_length( $length ) {
