@@ -16,9 +16,7 @@ function accelerate_child_scripts(){
 	wp_enqueue_style( 'fontawesome', 'http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
-
 // Add new custom post types
-
 function create_custom_post_types() {
     register_post_type( 'case_studies',
         array(
@@ -42,13 +40,9 @@ function create_custom_post_types() {
 						'rewrite' => array( 'slug' => 'our-services' ),
         )
     );
-
 }
-
 add_action( 'init', 'create_custom_post_types' );
-
 //limits excerpt length
-
 function custom_excerpt_length( $length ) {
 	return 20;
 }

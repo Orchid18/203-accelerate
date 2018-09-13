@@ -217,7 +217,6 @@ div.case-study-images img {
   font-weight: 700;
   margin:auto;
 }
-
 p.contact-intro{
   font-size: 1em;
   padding:0 18%;
@@ -228,13 +227,17 @@ p.contact-intro{
   float:right;
 }
 
-/*Our services - single post***********************************/
+/*About page************************************/
 
-
+/*post styles***************************/
 aside.our-services-sidebar{
   width:66%;
   float:left;
   margin:0 auto;
+}
+
+aside.our-services-sidebar h2{
+  margin-top: 20px;
 }
 
 div.our-services-image{
@@ -242,27 +245,29 @@ div.our-services-image{
   float:left;
 }
 
-div.our-services-image img{
-  display:block;
-  margin:0 auto;
-  padding-top: 40px;
+div.our-services-image-r{
+  width:33%;
+  float:left;
 }
 
+div.our-services-image-l{
+  width:33%;
+  float:left;
+}
 
+div.our-services-image-r img{
+  display:block;
+  margin:0 0 0 80px;
+}
 
-
-
-
-
-
-/*Our Services archive page************************************/
+/*end of post styles*******************/
 
 .our-services {
   background: url("img/taxi-photo-short.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
   height: auto;
-  margin: 0 0 5em;
+  margin: 0;
   padding: 3em 0 5em 0;
-	 text-align: center;
+	text-align: center;
 }
 
 .hero-content h2 {
@@ -277,7 +282,7 @@ div.our-services-image img{
 
 .services-intro{
   text-align: center;
-  margin:0 auto;
+  margin:0 0 60px;
 }
 
 .services-intro h3{
@@ -285,8 +290,8 @@ div.our-services-image img{
   font-weight: bolder;
 }
 
-.our-services-sidebar{
-  padding-bottom: 20px;
+.our-services-container{
+  margin:20px 0;
 }
 
 .about-contact{
@@ -308,3 +313,5 @@ div.our-services-image img{
   display: inline-block;
   padding-right: 20px;
 }
+
+/*end of about page styles**************************/
