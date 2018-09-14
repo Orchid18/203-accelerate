@@ -61,4 +61,18 @@ get_header(); ?>
  		</div>
 	</section>
 
+	<section class = "recent-tweet">
+		<div class = "site-content">
+			<div class = "tweet-feed">
+				<h4>Recent Tweet</h4>
+				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+						<div id="secondary" class="widget-area" role="complementary">
+							<?php dynamic_sidebar( 'sidebar-2' ); ?>
+						</div>
+					<?php endif; ?>
+					<h4 id = "tweet-follow"><a href = "https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%2F203-accelerate%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=skillcrush&tw_p=followbutton">Follow Us &rsaquo;</a></h4>
+				</div>
+			</div>
+		</section>
+
 <?php get_footer(); ?>

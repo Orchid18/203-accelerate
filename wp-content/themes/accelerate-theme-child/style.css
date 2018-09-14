@@ -43,6 +43,41 @@ Text Domain:  accelerate-theme-child
 	font-size: 1.5em;
 }
 
+/*blog page Mailchimp newsletter signup widget*/
+
+.mc4wp-form-fields input[type="submit"]{
+  padding:0 2.75em;
+}
+
+
+/*configure Twitter feed styles to match blog post styles on homepage*/
+
+.tweet-feed {
+	width: 50%;
+	float: left;
+	margin-bottom: 2em;
+  padding-left: 3em;
+}
+
+.tweet-feed h4 {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin: 2em 0 .5em;
+}
+.tweet-feed h3 {
+	font-size: 1.2em;
+}
+
+.tweet-feed ul {
+	list-style: none;
+  margin:auto;
+}
+
+#tweet-follow {
+  color:#45ac9d;
+}
+
 /*change appearance of "READ MORE" link*/
 .read-more-link a{
   font-family: 'Montserrat';
@@ -151,9 +186,9 @@ div.case-study-images img {
   display:  inline-block;
   background: rgba(0,0,0,0.8);
   margin: 0px 3px;
-  width: 40px;
+  width: 2.5rem;
   text-align: center;
-  padding: 7px 0;
+  padding: .5rem 0;
   font-size: 0.6em;
   border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -165,7 +200,7 @@ div.case-study-images img {
   padding: 0 7px;
   vertical-align: top;
   font-family: 'Fontawesome';
-  font-size: 20px;
+  font-size: 1.25rem;
   -webkit-font-smoothing: antialiased;
   color: #fff;
   content: '\f0c0';
@@ -227,37 +262,39 @@ p.contact-intro{
   float:right;
 }
 
+
+
 /*About page************************************/
 
 /*post styles***************************/
-aside.our-services-sidebar{
-  width:66%;
+.our-services-sidebar{
+  /*width:66%;*/
+  width:100%;
   float:left;
   margin:0 auto;
 }
 
-aside.our-services-sidebar h2{
-  margin-top: 20px;
+.our-services-sidebar h2{
+  margin-top: 2.25rem;
 }
 
-div.our-services-image{
+.our-services-image-r{
   width:33%;
   float:left;
 }
 
-div.our-services-image-r{
+.our-services-image-l{
   width:33%;
   float:left;
 }
 
-div.our-services-image-l{
-  width:33%;
-  float:left;
+.our-services-image-r img{
+  display:none;
+  margin:0 0 0 6rem;
 }
 
-div.our-services-image-r img{
-  display:block;
-  margin:0 0 0 80px;
+.our-services-image-l img{
+  display:none;
 }
 
 /*end of post styles*******************/
@@ -282,7 +319,7 @@ div.our-services-image-r img{
 
 .services-intro{
   text-align: center;
-  margin:0 0 60px;
+  margin:0 0 3.75rem;
 }
 
 .services-intro h3{
@@ -300,18 +337,23 @@ div.our-services-image-r img{
   height:auto;
   border-top: 1px solid #bfbfbf;
   margin:20px auto;
+  text-align: center;
 }
 
 .about-contact-blurb{
   list-style: none;
   margin:0 auto;
   width:66%;
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 
 .about-contact-blurb li{
   display: inline-block;
-  padding-right: 20px;
+  padding-right: 1.25rem;
+}
+
+.about-contact-blurb a.button{
+  padding:1em 2em;
 }
 
 /*404 page styles**************************/
@@ -325,7 +367,7 @@ div.our-services-image-r img{
 .fouro-map{
   display:flex;
   width:33%;
-  padding-top: 80px;
+  padding-top: 5.5rem;
   height:auto;
 }
 
@@ -356,4 +398,22 @@ div.our-services-image-r img{
 .fouro-text a{
   font-weight: bold;
   color:#45ac9d;
+}
+
+/*media queries*********************/
+
+@media (min-width: 768px){
+
+  .our-services-image-l img{
+    display:inline;
+  }
+
+  .our-services-image-r img{
+    display:block;
+  }
+
+  .our-services-sidebar{
+    width:66%;
+  }
+
 }
