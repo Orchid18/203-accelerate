@@ -4,14 +4,14 @@ Donate link: https://www.devpups.com/social-pug/
 Tags: social, social share, social sharing, social sharing buttons, social network, social share buttons, share buttons, share button, facebook button, pin button, share counter, social network share, floating share buttons, content share buttons, share counts, social share icon
 Requires at least: 3.1
 Tested up to: 4.9.8
-Stable tag: 1.4.9
+Stable tag: 1.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Social Pug adds the best looking social sharing buttons to your website and is the only social sharing plugin you will ever need.
 
 == Description ==
-**Say Hello To The Best Looking Social Sharing Buttons**
+**The Best Looking Social Sharing Buttons**
 
 Social Pug is one of the easies to use social sharing plugin available. It let's you add highly customizable social share buttons that will integrate beautifully with your website's design, leading to increased interactions and social media shares.
 
@@ -87,7 +87,7 @@ You can place both the inline share buttons and the floating sidebar sharing but
 
 
 == Screenshots ==
-1. Inlin-Content Social Sharing Buttons Output
+1. Inline-Content Social Sharing Buttons Output
 2. Floating Sidebar Social Share Buttons Output
 3. Floating Sidebar Social Share Buttons Configuration Page
 4. Before and After Content Social Sharing Buttons Configuration Page
@@ -95,8 +95,13 @@ You can place both the inline share buttons and the floating sidebar sharing but
 
 == Changelog ==
 
+= 1.5.0 =
+* New: You can now add your Twitter handle to the tweet generated when clicking on the Twitter share button.
+* Fixed: Issue with inline social share buttons being added to Yoast meta descriptions.
+* Misc: Small changes to the user interface.
+
 = 1.4.9 =
-* New: Removed support for NewShareCounts in favor of support for OpenShareCount to retrieve Twitter social share counts
+* New: Removed support for NewShareCounts in favor of support for OpenShareCount to retrieve Twitter social share counts.
 
 = 1.4.8 =
 * Misc: Small admin user interface improvements to make the plugin more user friendly.
