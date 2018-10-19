@@ -27,9 +27,14 @@ Text Domain:  accelerate-theme-child
 
 /*change blog post div width*/
 .blog-post {
-	width: 50%;
+	width: 100%;
 	float: left;
 	margin-bottom: 2em;
+}
+
+.blog-post p{
+  max-width: 500px;
+  margin:20px 0;
 }
 
 /*blog post header style changes*/
@@ -52,7 +57,7 @@ Text Domain:  accelerate-theme-child
 
 /*configure Twitter feed styles to match blog post styles on homepage*/
 
-.tweet-feed {
+/*.tweet-feed {
 	width: 50%;
 	float: left;
 	margin-bottom: 2em;
@@ -76,7 +81,7 @@ Text Domain:  accelerate-theme-child
 
 #tweet-follow {
   color:#45ac9d;
-}
+}*/
 
 /*change appearance of "READ MORE" link*/
 .read-more-link a{
@@ -418,15 +423,13 @@ embed, iframe, img, object, video { max-width: 100%; }
   .our-services-sidebar{
     width:66%;
   }
-	
+
   div.case-study-images{
 	  width:606px;
   }
-	
+
   aside.case-study-sidebar{
 	width:314px;
   }
 
 }
-
-

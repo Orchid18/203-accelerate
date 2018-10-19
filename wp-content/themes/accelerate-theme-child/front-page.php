@@ -61,7 +61,7 @@ get_header(); ?>
  		</div>
 	</section>
 
-	<section class = "recent-tweet">
+	<!--<section class = "recent-tweet">
 		<div class = "site-content">
 			<div class = "tweet-feed">
 				<h4>Recent Tweet</h4>
