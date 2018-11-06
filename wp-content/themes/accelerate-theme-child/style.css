@@ -427,9 +427,15 @@ embed, iframe, img, object, video { max-width: 100%; }
   div.case-study-images{
 	  width:606px;
   }
+	
+	
 
   aside.case-study-sidebar{
 	width:314px;
   }
+	
+	.hero-content h2{
+		max-width:50%;
+	}
 
 }
