@@ -11,6 +11,12 @@ Text Domain:  accelerate-theme-child
 */
 
 /*change homepage background image*/
+
+html, body{
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
@@ -150,6 +156,10 @@ section.featured-work h4{
 ul.homepage-featured-work{
   width: 100%;
 	float: left;
+}
+
+ul{
+	margin:1em 0 1em 1em;
 }
 
 li.individual-featured-work{
@@ -436,6 +446,10 @@ embed, iframe, img, object, video { max-width: 100%; }
 	
 	.hero-content h2{
 		max-width:50%;
+	}
+	
+	.hero-content h3{
+		font-size:1.6em;
 	}
 
 }
